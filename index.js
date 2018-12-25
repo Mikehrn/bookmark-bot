@@ -3,17 +3,17 @@ const ogs = require('open-graph-scraper');
 const firebase = require('firebase');
 
 // Bot config
-const token = '480297082:AAFtceerLrF3sfLF95BlqOWjlFNuk8eei1Q';
+const token = '';
 const bot = new TelegramBot(token, {polling: true});
 
 // Init Firebase
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyCsm7qddjZUI_3EV8NK75sWZAFANEisWqw",
-  authDomain: "mr-bookmarker-bot.firebaseapp.com",
-  databaseURL: "https://mr-bookmarker-bot.firebaseio.com",
-  projectId: "mr-bookmarker-bot",
-  storageBucket: "mr-bookmarker-bot.appspot.com",
-  messagingSenderId: "194029048374"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 });
 const ref = firebase.database().ref();
 const sitesRef = ref.child("sites");
